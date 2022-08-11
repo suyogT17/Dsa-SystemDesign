@@ -1,7 +1,16 @@
 # Dsa-SystemDesign
-Repo for DSA and System Design
+Repository for DSA and System Design
 
 ## DSA Topics Covered
+- Graph
+  1. Create a Graph, print it
+  2. Implement BFS algorithm
+  3. Implement DFS algorithm
+  4. Detect Cycle in Directed Graph using DFS/BFS(Kahn's Algo) Algo
+  5. Detect Cycle in UnDirected Graph using DFS/BFS Algo
+  6. Bipartite Graph
+  7. Topological Sort using DFS/BFS(Kahn's Algo)
+  8. Shortest Path in Undirected Graph with Unit Weights
 
 ## System Design Topic Covered:
 - Design Patterns: 
