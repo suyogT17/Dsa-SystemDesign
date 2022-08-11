@@ -1,4 +1,4 @@
-package com.dsalgo.lrucache;
+package com.dsalgo.design;
 
 // { Driver Code Starts
 
