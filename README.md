@@ -3,14 +3,21 @@ Repository for DSA and System Design
 
 ## DSA Topics Covered
 - Graph
-  1. Create a Graph, print it
-  2. Implement BFS algorithm
-  3. Implement DFS algorithm
-  4. Detect Cycle in Directed Graph using DFS/BFS(Kahn's Algo) Algo
-  5. Detect Cycle in UnDirected Graph using DFS/BFS Algo
-  6. Bipartite Graph
-  7. Topological Sort using DFS/BFS(Kahn's Algo)
-  8. Shortest Path in Undirected Graph with Unit Weights
+  - Common Graph Questions
+    1. Create a graph, print it
+    2. Implement BFS algorithm
+    3. Implement DFS algorithm
+    4. Bipartite graph using BFS/DFS
+  - Undirected Graph
+    1. Implementation of undirected graph with weights
+    2. Detect cycle in undirected graph using DFS/BFS algo
+    3. Shortest path in undirected Graph with unit weights - using BFS
+    4. Shortest path in undirected Graph with weights - using Dijkstra's Algo
+  - Directed Graph
+    1. Implementation of directed graph with weights
+    2. Topological sort using DFS/BFS(Kahn's Algo)
+    3. Detect cycle in directed graph - using DFS/BFS(Kahn's Algo)
+    4. Shortest path in directed acyclic graph - using Topological sort + bfs
 
 ## System Design Topic Covered:
 - Design Patterns: 
