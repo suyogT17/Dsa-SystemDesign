@@ -1,4 +1,6 @@
-package com.dsalgo.binarysearchtree;
+package com.dsalgo.binarysearchtree.minmaxrange;
+
+import com.dsalgo.binarysearchtree.TreeNode;
 
 /**
  * Problem Link: https://leetcode.com/problems/validate-binary-search-tree/

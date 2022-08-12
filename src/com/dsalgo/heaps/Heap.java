@@ -1,9 +1,21 @@
-package com.dsalgo;
+package com.dsalgo.heaps;
 
 import java.util.Arrays;
 
-public class Heap {
+/**
+ * Implementation of max heap;
+ * Heap is needed where insertion find max/min and delete min/max operation needed to be fast
+ * Operations:
+ * - buildHeap = O(n)
+ * - maxHeapify = O(logN)
+ * - insertKey = O(logN)
+ * - increamentKey = O(logN)
+ * - decreamentKey = O(logN)
+ * - extractMAx = O(logN)
+ * - heapSort = O(NlogN)
+ */
 
+public class Heap {
     int heapSize = 0;
     public static void main(String[] args) throws Exception {
 
@@ -31,7 +43,6 @@ public class Heap {
             maxHeapify(A, i, heapSize);
         }
     }
-
 
     void maxHeapify(int[] A, int i, int size){
         int largest = i; // 3

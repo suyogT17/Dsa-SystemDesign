@@ -1,4 +1,6 @@
-package com.dsalgo.binarysearchtree;
+package com.dsalgo.binarysearchtree.buildbst;
+
+import com.dsalgo.binarysearchtree.TreeNode;
 
 /**
  * Problem Link: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
