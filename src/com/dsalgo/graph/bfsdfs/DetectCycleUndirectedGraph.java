@@ -11,7 +11,7 @@ import java.util.*;
  *   - Pass parent node along with the current node we are going to visit in the graph
  *   - if there is any node which is already visited but not parent then its cycle.
  * -BFS:
- *   - Maintain queue of Pair<curr,prev>
+ *   - Maintain queue of Node<curr,prev>
  *   - While adding child nodes to queue check if there is any node which is already visited but not prev then its cycle.
  */
 
@@ -31,8 +31,8 @@ public class DetectCycleUndirectedGraph {
         for(int i=0;i<V;i++){
             if(!visited[i]) {
                 visited[i] = true;
-                Queue<Pair> queue= new LinkedList();
-                queue.add(new Pair(i, -1));
+                Queue<Node> queue= new LinkedList();
+                queue.add(new Node(i, -1));
                 if(detectCycleBfsRec(adj, visited, queue)) return true;
             }
         }
@@ -53,15 +53,15 @@ public class DetectCycleUndirectedGraph {
         return false;
     }
 
-    private boolean detetctCycleBfs( ArrayList<ArrayList<Integer>> adj, boolean[] visited, Queue<Pair> queue){
+    private boolean detetctCycleBfs( ArrayList<ArrayList<Integer>> adj, boolean[] visited, Queue<Node> queue){
 
         while(!queue.isEmpty()){
-            Pair curr = queue.poll();
+            Node curr = queue.poll();
 
             for(int i: adj.get(curr.node)){
                 if(!visited[i]){
                     visited[i] =  true;
-                    queue.offer(new Pair(i, curr.node));
+                    queue.offer(new Node(i, curr.node));
                 }
                 else if(i != curr.prev) return true;
             }
@@ -69,13 +69,13 @@ public class DetectCycleUndirectedGraph {
         return false;
     }
 
-    private boolean detectCycleBfsRec( ArrayList<ArrayList<Integer>> adj, boolean[] visited, Queue<Pair> queue){
+    private boolean detectCycleBfsRec( ArrayList<ArrayList<Integer>> adj, boolean[] visited, Queue<Node> queue){
         if(queue.isEmpty()) return false;
-        Pair curr =  queue.poll();
+        Node curr =  queue.poll();
         for(int i: adj.get(curr.node)){
             if(!visited[i]){
                 visited[i] = true;
-                queue.add(new Pair(i, curr.node));
+                queue.add(new Node(i, curr.node));
             }
             else if(i != curr.prev) return true;
         }
@@ -84,9 +84,9 @@ public class DetectCycleUndirectedGraph {
     }
 }
 
-class Pair{
+class Node{
     int node , prev;
-    public Pair(int node , int prev){
+    public Node(int node , int prev){
         this.node =  node;
         this.prev = prev;
     }

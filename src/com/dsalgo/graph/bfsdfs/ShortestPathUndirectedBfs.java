@@ -4,14 +4,14 @@ import java.util.*;
 
 /**
  * Problem Link: https://www.codingninjas.com/codestudio/problems/shortest-path-in-an-unweighted-graph_981297
- * Code to find Shortest path in an unweighted graph using BFS
+ * Code to find The Shortest path in an unweighted graph using BFS
  * Approach:
  * -Time = O(V+E) Space=O(n+n+n)(for queue, dist and path array) (V = Vertex, E = Edges)
  * -BFS:
- *   - Maintain queue of and add start element in it
+ *   - Maintain queue of node and add source node in it
  *   - Maintain distance and path array to store shorted distance and prev node to generate path.
  *   - Fill distance array with Integer.MAX_VALUE and path with -1
- *   - Set start element distance as 0
+ *   - Set source element distance as 0
  *   - Run till queue is not empty
  *     - Remove element from the queue and traverse its adjacent element
  *     - if current max distance to reach adjacent is greater than (distance to reach current + 1)
@@ -21,7 +21,7 @@ import java.util.*;
  *     - Traverse from end element to generate the path
  *     - reverse the output and return
  */
-public class ShortestPathBfs {
+public class ShortestPathUndirectedBfs {
 
     public static LinkedList<Integer> shortestPath(int[][] edges, int n, int m, int s, int t) {
 

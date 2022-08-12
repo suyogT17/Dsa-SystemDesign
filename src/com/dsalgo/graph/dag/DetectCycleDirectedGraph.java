@@ -1,4 +1,4 @@
-package com.dsalgo.graph.bfsdfs;
+package com.dsalgo.graph.dag;
 
 import java.util.*;
 
