@@ -1,4 +1,4 @@
-package com.dsalgo.graph.dag;
+package com.dsalgo.graph.directedgraphs;
 
 import java.util.*;
 

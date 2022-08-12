@@ -1,4 +1,4 @@
-package com.dsalgo.graph.bfsdfs;
+package com.dsalgo.graph.directedgraphs;
 
 import java.util.*;
 

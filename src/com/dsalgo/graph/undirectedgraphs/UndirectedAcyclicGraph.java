@@ -1,7 +1,6 @@
-package com.dsalgo.graph.bfsdfs;
+package com.dsalgo.graph.undirectedgraphs;
 
 import java.util.ArrayList;
-import java.util.Stack;
 
 /**
  * Implementation of Undirected Acyclic Graph with weights

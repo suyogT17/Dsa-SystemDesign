@@ -1,4 +1,4 @@
-package com.dsalgo.graph.dag;
+package com.dsalgo.graph.directedgraphs;
 
 class Pair {
     int node, weight;

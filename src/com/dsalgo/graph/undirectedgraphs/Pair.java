@@ -1,4 +1,4 @@
-package com.dsalgo.graph.bfsdfs;
+package com.dsalgo.graph.undirectedgraphs;
 
 class Pair {
     int node, distance;
