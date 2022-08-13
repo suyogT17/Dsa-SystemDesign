@@ -2,6 +2,10 @@
 Repository for DSA and System Design
 
 ## DSA Topics Covered
+- Tree
+  - Binary Search Tree
+    1. Build BST from sorted array
+    2. Validate BST
 - Graph
   - Common Graph Questions
     1. Create a graph, print it

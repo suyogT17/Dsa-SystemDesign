@@ -1,6 +1,5 @@
 package com.dsalgo.graph.undirectedgraphs;
 
-import com.dsalgo.graph.bfsdfs.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;

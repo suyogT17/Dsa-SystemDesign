@@ -1,7 +1,7 @@
 package com.dsalgo.graph.undirectedgraphs;
 
-class Pair {
-    int node, distance;
+public class Pair {
+    public int node, distance;
 
     public Pair(int node, int distance) {
         this.distance = distance;
