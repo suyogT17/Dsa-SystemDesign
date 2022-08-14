@@ -12,16 +12,21 @@ Repository for DSA and System Design
     2. Implement BFS algorithm
     3. Implement DFS algorithm
     4. Bipartite graph using BFS/DFS
+    5. Rat in a maze - using DFS
+    6. Find all bridges in graph - using DFS
+    7. find all Articulation Points - using DFS
   - Undirected Graph
     1. Implementation of undirected graph with weights
     2. Detect cycle in undirected graph using DFS/BFS algo
-    3. Shortest path in undirected Graph with unit weights - using BFS
-    4. Shortest path in undirected Graph with weights - using Dijkstra's Algo
+    3. Shortest path in undirected graph with unit weights - using BFS
+    4. Shortest path in undirected graph with weights - using Dijkstra's Algo
   - Directed Graph
     1. Implementation of directed graph with weights
     2. Topological sort using DFS/BFS(Kahn's Algo)
     3. Detect cycle in directed graph - using DFS/BFS(Kahn's Algo)
-    4. Shortest path in directed acyclic graph - using Topological sort + bfs
+    4. Shortest path in directed acyclic graph - using topological sort + bfs
+    5. Kosaraju's algorithm - (topological sort + transpose + DFS)
+    6. Bellman-Ford Algorithm - (shortest path and negative cycle detection in directed graph)
 
 ## System Design Topic Covered:
 - Design Patterns: 
