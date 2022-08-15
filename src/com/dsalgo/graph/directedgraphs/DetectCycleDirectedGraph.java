@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * Problem Link: https://practice.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+ * Problem Link: https://practice.geeksforgeeks.org/problems/prerequisite-tasks/1
  * Code to detect cycle in directed graph using DFS (Recursion)
  * Approach:
  * -DFS

@@ -3,8 +3,9 @@ package com.dsalgo.graph.directedgraphs;
 import java.util.*;
 
 /**
- * Implementation of Bellman Ford Algorithm to find the shortest distance in directed graph where no negative cycle present
- * Dijkstra's algorithm don't work on the negative edges
+ * Implementation of Bellman-Ford Algorithm to find the shortest distance in directed graph where no negative edges cycle present
+ * Dijkstra's algorithm don't work on the negative edge weights
+ * Time: (N-1)*(E)
  * Steps in bellman ford:
  * - maintain distance array set all values to 100000000 and source to 0
  * - relax all edges of the graph for n-1 times
@@ -19,7 +20,6 @@ class BellmanFord
 {
     static int[] bellman_ford(int V, ArrayList<ArrayList<Integer>> adj, int S)
     {
-        // Write your code here
         int[] distance =  new int[V];
         Arrays.fill(distance, 100000000);  //consider 100000000 as infinity
         distance[S] = 0;
@@ -37,7 +37,6 @@ class BellmanFord
                 break;
             }
         }
-
         return distance;
     }
 }
