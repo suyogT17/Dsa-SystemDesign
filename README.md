@@ -15,6 +15,9 @@ Repository for DSA and System Design
     5. Rat in a maze - using DFS
     6. Find all bridges in graph - using DFS
     7. find all Articulation Points - using DFS
+    8. Clone Graph - using BFS/DFS
+    9. Minimum steps by knight - using BFS
+    10. Count islands -  using BFS
   - Undirected Graph
     1. Implementation of undirected graph with weights
     2. Detect cycle in undirected graph using DFS/BFS algo
@@ -27,6 +30,15 @@ Repository for DSA and System Design
     4. Shortest path in directed acyclic graph - using topological sort + bfs
     5. Kosaraju's algorithm - (topological sort + transpose + DFS)
     6. Bellman-Ford Algorithm - (shortest path and negative cycle detection in directed graph)
+    7. Minimum time to complete job - shortest path in directed graph
+  - Minimum Spanning Tree
+    1. Minimum Spanning Tree
+    2. Prim's algorithm
+    3. Kruskal's algorithm
+    4. Disjoint set
+    5. Make network connected
+  - Graph on String
+    1. Word ladder - using BFS
 
 ## System Design Topic Covered:
 - Design Patterns: 
