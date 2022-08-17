@@ -1,5 +1,6 @@
-package com.dsalgo.graph.directedgraphs;
+package com.dsalgo.graph.directedgraphs.topologicalsort;
 
+import com.dsalgo.graph.directedgraphs.DirectedAcyclicGraph;
 import java.util.ArrayList;
 import java.util.Arrays;
 
@@ -28,7 +29,7 @@ public class MinTimeToCompleteJob {
 
     }
 
-    private static void timeTaken(int node, ArrayList<Integer> topoSort ,ArrayList<ArrayList<Pair>> adj, int[] distance) {
+    private static void timeTaken(int node, ArrayList<Integer> topoSort , ArrayList<ArrayList<Pair>> adj, int[] distance) {
         distance[node] = 1;
         for (int i : topoSort) {
             if(distance[i] != Integer.MAX_VALUE) {

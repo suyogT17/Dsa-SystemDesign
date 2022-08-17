@@ -1,5 +1,6 @@
 package com.dsalgo.graph.directedgraphs;
 
+import com.dsalgo.graph.directedgraphs.topologicalsort.Pair;
 import java.util.ArrayList;
 import java.util.Stack;
 

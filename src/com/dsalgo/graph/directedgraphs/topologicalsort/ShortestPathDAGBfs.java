@@ -1,4 +1,6 @@
-package com.dsalgo.graph.directedgraphs;
+package com.dsalgo.graph.directedgraphs.topologicalsort;
+
+import com.dsalgo.graph.directedgraphs.DirectedAcyclicGraph;
 
 import java.util.ArrayList;
 import java.util.Arrays;

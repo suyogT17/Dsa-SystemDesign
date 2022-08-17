@@ -1,7 +1,7 @@
-package com.dsalgo.graph.directedgraphs;
+package com.dsalgo.graph.directedgraphs.topologicalsort;
 
-class Pair {
-    int node, weight;
+public class Pair {
+    public int node, weight;
 
     public Pair(int node, int weight) {
         this.node = node;

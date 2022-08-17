@@ -1,4 +1,4 @@
-package com.dsalgo.graph.directedgraphs;
+package com.dsalgo.graph.directedgraphs.topologicalsort;
 
 import java.util.*;
 
