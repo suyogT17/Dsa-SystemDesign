@@ -4,6 +4,7 @@ import java.util.*;
 
 /**
  * Problem Link: https://practice.geeksforgeeks.org/problems/find-the-number-of-islands/1
+ * Time: O(n*m)
  * Find the number of islands - using bfs
  */
 class CountIslands {

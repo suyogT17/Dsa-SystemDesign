@@ -24,7 +24,6 @@ public class DijkstrasAlgo {
         distance[S] = 0;
 
         while(!pq.isEmpty()){
-
             Pair curr = pq.poll();
             for(Pair i: adjList.get(curr.node)){
                 if(distance[i.node] > distance[curr.node] + i.distance){
