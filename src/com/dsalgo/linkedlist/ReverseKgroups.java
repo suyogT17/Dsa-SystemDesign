@@ -4,17 +4,6 @@ package com.dsalgo.linkedlist;
 
 import java.util.Scanner;
 
-class Node
-{
-    int data;
-    Node next;
-    Node(int key)
-    {
-        data = key;
-        next = null;
-    }
-}
-
 class ReverseKgroups
 {
     static Node head;
