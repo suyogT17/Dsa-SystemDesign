@@ -3,7 +3,7 @@ package com.dsalgo.heaps;
 import java.util.Arrays;
 
 /**
- * Implementation of max heap;
+ * Implementation of max heap; https://www.geeksforgeeks.org/building-heap-from-array/
  * Heap is needed where insertion find max/min and delete min/max operation needed to be fast
  * Operations:
  * - buildHeap = O(n)
