@@ -1,4 +1,4 @@
-package com.designpattern.prototype;
+package com.systemdesign.designpattern.prototype;
 
 public class AnimalPrototypeTest {
     public static void main(String[] args) {

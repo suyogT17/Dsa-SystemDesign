@@ -1,4 +1,4 @@
-package com.designpattern.singleton;
+package com.systemdesign.designpattern.singleton;
 
 //Approach using enums remaining
 public class SingletonTest {

@@ -1,4 +1,4 @@
-package com.designpattern.strategy;
+package com.systemdesign.designpattern.strategy;
 
 public class AnimalStrategyDesignPatternTest {
     public static void main(String[] args) {

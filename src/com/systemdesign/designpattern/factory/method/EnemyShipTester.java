@@ -1,4 +1,4 @@
-package com.designpattern.factory.method;
+package com.systemdesign.designpattern.factory.method;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.designpattern.adapter;
+package com.systemdesign.designpattern.adapter;
 
 public class EnemyAdpaterTest {
     public static void main(String[] args) {

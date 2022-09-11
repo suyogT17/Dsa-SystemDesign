@@ -1,4 +1,4 @@
-package com.designpattern.facade;
+package com.systemdesign.designpattern.facade;
 
 public class BankAccountAccessTest {
     public static void main(String[] args) {

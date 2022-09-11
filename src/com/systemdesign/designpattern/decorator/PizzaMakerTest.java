@@ -1,4 +1,4 @@
-package com.designpattern.decorator;
+package com.systemdesign.designpattern.decorator;
 
 public class PizzaMakerTest {
     public static void main(String[] args) {
