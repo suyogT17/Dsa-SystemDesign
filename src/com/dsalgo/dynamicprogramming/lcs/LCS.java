@@ -49,6 +49,22 @@ public class LCS {
                 else dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]);
             }
         }
+        int i = n, j=m;
+        String lcs= "";
+        while(i > 0  && j >0){
+            if(text1.charAt(i-1) == text2.charAt(j-1)){
+                lcs = text1.charAt(i-1) + lcs;
+                i--;
+                j--;
+            }
+            else{
+                if(dp[i-1][j] >  dp [j][j-1]){
+                    i--;
+                }
+                else j--;
+            }
+        }
+        System.out.println("LCS : "+lcs);
         return dp[n][m];
     }
 }

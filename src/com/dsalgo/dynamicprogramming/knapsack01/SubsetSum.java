@@ -39,7 +39,7 @@ public class SubsetSum {
         if (dp[n][w] != -1) return dp[n][w];
         if (arr[n - 1] <= w)
             return dp[n][w] = Math.max(solveSubsetSumRecWithMemo(arr, w - arr[n - 1], n - 1, dp), solveSubsetSumRecWithMemo(arr, w, n - 1, dp));
-        else return solveSubsetSumRecWithMemo(arr, w, n - 1, dp);
+        else return dp[n][w] = solveSubsetSumRecWithMemo(arr, w, n - 1, dp);
     }
 
     protected static boolean solveSubsetSumWithTabulation(int[] arr, int w, int n, boolean[][] dp) {

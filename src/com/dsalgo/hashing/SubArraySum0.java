@@ -11,10 +11,10 @@ class SubArraySum0 {
         Set<Integer> set = new HashSet();
         set.add(0);
         for (int num : arr) {
-            if (set.contains(sum + num)) return true;
+            if (set.contains(sum + num)) return true;   // check if current sum contains in the array or not
             else {
-                sum += num;
-                set.add(sum);
+                sum += num; // add the current element to the sum
+                set.add(sum);   // add current sum to the set
             }
         }
         return false;
