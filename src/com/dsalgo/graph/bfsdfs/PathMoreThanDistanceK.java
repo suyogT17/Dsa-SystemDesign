@@ -30,7 +30,7 @@ public class PathMoreThanDistanceK {
                 if (dfs(ad.node, k, adjList, visited, cost + ad.weight)) return true;
             }
         }
-        visited[node] = false;
+        visited[node] = false; // backtrack to previous node
         return false;
     }
 }

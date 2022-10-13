@@ -8,7 +8,7 @@ import java.util.*;
  * - Finding those nodes in the graph whose removal will break the graph into two or more components
  * Approach
  * - DFS : Time: O(V+E)
- * - maintain three arrays low time, insertion time, articulation
+ * - maintain four arrays low time, insertion time, articulation, visited
  * - use timer starting from 0 and at each node it will increase by 1
  * - visit node and mark it as visited and set its low and insertion as timer
  * - visit adjacent nodes of node
@@ -21,7 +21,7 @@ import java.util.*;
  *             - if low of adjacent is greater than equal to insertion of current and parent is not -1,
  *               this means node has only one path to visit adjacent so its low is less than node's insertion, and it can't reach nodes before node so condition is >=
  *               - mark articulation[node] = 1
- *          - else adjacent is visited so set low of current node to min of (low of current, insertion of adjacent)
+ *          - else adjacent is visited so set low of current node to min of (low of current, insertion of adjacent) => because we have already checked that low of adjacent is greater than low of current
  *      - if parent is connected to multiple individual components so parent is articulation point
  *                   0
  *                 /   \

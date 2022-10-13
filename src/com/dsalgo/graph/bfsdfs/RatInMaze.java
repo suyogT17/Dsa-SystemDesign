@@ -18,10 +18,10 @@ class RatInMaze {
     }
 
     private static void dfs(int[][] m, int i, int j, boolean[][] visited, ArrayList<String> output, int n, String path){
-        if(i < 0 || i >= n || j < 0 || j>=n ) return;
-        if(m[i][j] == 0 || visited[i][j]) return;
+        if(i < 0 || i >= n || j < 0 || j>=n ) return; //if rat is going out of maze boundries
+        if(m[i][j] == 0 || visited[i][j]) return; // if cell in the maze has 0  then can't move from that cell
         visited[i][j] = true;
-        if(i == n-1 && j == n-1) {
+        if(i == n-1 && j == n-1) { //reaches the end node in the maze
             output.add(path);
             visited[i][j] = false;
             return;
@@ -30,6 +30,6 @@ class RatInMaze {
         dfs(m,i+1,j, visited, output, n,path+"D");
         dfs(m,i,j-1, visited, output, n,path+"L");
         dfs(m,i,j+1, visited, output, n,path+"R");
-        visited[i][j] = false;
+        visited[i][j] = false;      // backtracking
     }
 }

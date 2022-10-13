@@ -58,7 +58,7 @@ class BridgeInGraph {
                 dfs(ad, node, visited, insertion, low, graph, timer,output);
                 low[node] = Math.min(low[node], low[ad]); //set low = current low or adjacent's low
 
-                if(low[ad] > insertion[node]){ // this means node has only one path to visit adjacent so its low is greater than parent
+                if(low[ad] > insertion[node]){ // this means the lowest vertex reachable from the node is below ad (a -> b -> c so the a-b is a bridge to reach c )
                     output.add(new ArrayList<Integer>(Arrays.asList(node, ad)));
                 }
             }

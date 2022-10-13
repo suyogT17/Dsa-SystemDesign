@@ -44,7 +44,7 @@ class BipartiteGraph
         colour[node] = nextcolour;
         for(int i: adj.get(node)){
             if(colour[i] != -1){
-                if(colour[i] == nextcolour){
+                if(colour[i] == nextcolour){ //if any of the already visited adjacent has same color as the current nodes color then it's not bipartite graph
                     return false;
                 }
             }

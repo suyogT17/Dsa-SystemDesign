@@ -22,7 +22,7 @@ class CountIslands {
     }
     private void bfs(char[][] grid, int i, int j){
         if(i>=grid.length || i<0 || j >= grid[0].length || j < 0 || grid[i][j] != '1' ) return;
-        grid[i][j] = '0';
+        grid[i][j] = '0'; //visit and make it 0 so that it could not a part of any another island
         bfs(grid,i-1,j);
         bfs(grid,i-1,j+1);
         bfs(grid,i,j+1);

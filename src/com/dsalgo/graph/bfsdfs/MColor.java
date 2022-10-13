@@ -35,7 +35,7 @@ class MColor {
 
     boolean isSafe(int node , ArrayList<ArrayList<Integer>> adjList, int[] color, int col){
         for(int ad: adjList.get(node)){
-            if(color[ad] == col) return false;
+            if(color[ad] == col) return false; // if any of the adjacent node already painted with the col then return false
         }
         return true;
     }
@@ -43,11 +43,11 @@ class MColor {
     boolean colorGraph(int node , int m, ArrayList<ArrayList<Integer>> adjList, int[] color,int n){
         if(node == n) return true;
 
-        for(int i=1;i<=m;i++){
-            if(isSafe(node,adjList, color, i)){
-                color[node] = i;
-                if(colorGraph(node+1, m,adjList, color,n)) return true;
-                color[node] = 0;
+        for(int i=1;i<=m;i++){  // run the loop over the M colors and find the valid color
+            if(isSafe(node,adjList, color, i)){ //checking if we could apply any of the M color
+                color[node] = i;        // assign and color the remaining graph
+                if(colorGraph(node+1, m, adjList, color, n)) return true;
+                color[node] = 0;        // backtracking
             }
         }
         return false;
