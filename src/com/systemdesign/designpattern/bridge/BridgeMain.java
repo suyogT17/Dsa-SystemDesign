@@ -1,6 +1,6 @@
 package com.systemdesign.designpattern.bridge;
 
-public class BridgeMain {
+public class  BridgeMain {
     public static void main(String[] args) {
         Text textOverEmail = new Text(new Email());
         textOverEmail.sendNotification();

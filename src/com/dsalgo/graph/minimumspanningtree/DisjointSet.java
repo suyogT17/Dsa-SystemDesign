@@ -37,7 +37,7 @@ public class DisjointSet{
     void union(int node1, int node2){
         int node1Parent = findParent(node1);
         int node2Parent = findParent(node2);
-
+        
         if(rank[node1Parent] < rank[node2Parent]){
             parent[node1Parent] = node2Parent;
         }

@@ -1,6 +1,5 @@
 package com.systemdesign.lowleveldesignexamples.parkinglotsystem.parkinglot;
 
-import com.systemdesign.lowleveldesignexamples.parkinglotsystem.parkinglot.vehicle.Vehicle;
 import com.systemdesign.lowleveldesignexamples.parkinglotsystem.parkinglot.vehicle.VehicleType;
 import lombok.Data;
 

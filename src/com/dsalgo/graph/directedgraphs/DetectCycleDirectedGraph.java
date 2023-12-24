@@ -11,6 +11,7 @@ import java.util.*;
  *  -Time = O(V+E) Space=O(n+n)(for visited and dfsVisited array) (V = Vertex, E = Edges)
  *  - Maintain two visited arrays. visited and dfsVisited
  *  - As you visit nodes mark visited and dfsVisited both true
+ *  - If DFS visited is already true then cycle is present
  *  - on finishing each path, if it doesn't have cycle, while travelling back mark nodes in dfsVisited as false
  * -BFS
  *  -Time = O(V+E) Space=O(n+n)(for queue and in-degree array) (V = Vertex, E = Edges)

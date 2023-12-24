@@ -1,0 +1,31 @@
+
+System:
+
+1. Booking of rooms - Room types : standard, deluxe, family suite
+2. Retrieve information ( who booked a particular room, what rooms booked)
+3. cancel booking and refund before 24 hrs of check in date
+4. send notifications whenever booking is nearing the check-in or check-out date
+5. keep housekeeping log and keep track of housekeeping tasks
+
+Guests:
+search room inventory
+book available room
+cancel booking
+add room service
+food items
+can add amenities
+pay their bills
+
+
+Important entities:
+Room
+Booking
+Payment
+customer
+Housekeeper
+System/admin
+
+
+
+
+

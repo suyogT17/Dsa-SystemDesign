@@ -15,9 +15,4 @@ public class ParkingFloor {
         vehicleTypeParkingSlots.put(VehicleType.TRUCK, new ArrayDeque<>());
         vehicleTypeParkingSlots.put(VehicleType.BIKE, new ArrayDeque<>());
     }
-
-
-
-
-
 }

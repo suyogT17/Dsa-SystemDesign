@@ -13,10 +13,10 @@ package com.dsalgo.dynamicprogramming.knapsack01;
  */
 public class CountSubsetWithGivenDiff {
     public static void main(String[] args) {
-        int[] arr = {1};
+        int[] arr = {0,0,0,0,0,0,0,0,1};
         int n = arr.length;
         int total = 0;
-        int diff = 2;
+        int diff = 1;
         for (int num : arr) {
             total += num;
         }

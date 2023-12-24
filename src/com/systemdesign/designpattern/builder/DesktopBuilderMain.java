@@ -72,7 +72,6 @@ interface DesktopBuilder{
 }
 
 class DellDesktopBuilder implements DesktopBuilder{
-
     Desktop desktop;
 
     public DellDesktopBuilder(){
@@ -81,11 +80,9 @@ class DellDesktopBuilder implements DesktopBuilder{
     public void buildMonitor() {
         desktop.setMonitor("Dell Monitor");
     }
-
     public void buildKeyboard() {
         desktop.setKeyboard("Dell Keyboard");
     }
-
     public void buildMouse() {
         desktop.setMouse("Dell Mouse");
     }

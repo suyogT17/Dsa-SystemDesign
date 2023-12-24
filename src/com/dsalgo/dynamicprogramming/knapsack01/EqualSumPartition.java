@@ -13,8 +13,8 @@ public class EqualSumPartition {
             sum += num;
         }
         boolean isPartitionPossible = false;
-        if (sum % 2 == 0) {
-            int sumToFind = sum / 2;
+        if (sum % 2 == 0) {           // if sum is even then only equal sum partition is possible
+            int sumToFind = sum / 2;  // check if sum/2 is achieved or not
             System.out.println("Sum to Find: " + sumToFind);
             boolean[][] dp = new boolean[n + 1][sumToFind + 1];
             isPartitionPossible = SubsetSum.solveSubsetSumWithTabulation(nums, sumToFind, n, dp);

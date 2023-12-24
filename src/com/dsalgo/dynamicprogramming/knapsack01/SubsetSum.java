@@ -26,11 +26,11 @@ public class SubsetSum {
     }
 
     private static boolean solveSubsetSumRec(int[] arr, int w, int n) {
-        if (w == 0) return true;
-        if (n == 0) return false;
-        if (arr[n - 1] <= w)
-            return solveSubsetSumRec(arr, w - arr[n - 1], n - 1) || solveSubsetSumRec(arr, w, n - 1);
-        else return solveSubsetSumRec(arr, w, n - 1);
+        if (w == 0) return true;  // if weight is 0 then it can be achieved without any element
+        if (n == 0) return false; // if number of items given are 0 then we can't achieve sum
+        if (arr[n - 1] <= w)      // if element is less than weight
+            return solveSubsetSumRec(arr, w - arr[n - 1], n - 1) || solveSubsetSumRec(arr, w, n - 1);  // sum can be achieved by adding the current weight or not adding the weight
+        else return solveSubsetSumRec(arr, w, n - 1);  // if current element is greater than weight then we can't pick
     }
 
     private static int solveSubsetSumRecWithMemo(int[] arr, int w, int n, int[][] dp) {
